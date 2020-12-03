@@ -10,5 +10,8 @@ public class ControlFlowExercises {
         for (float i = 2; i < 1000000; i *= i) {
             System.out.printf("%.0f%n", i);
         }
+
+
+
     }
 }
