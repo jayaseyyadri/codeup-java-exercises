@@ -1,5 +1,6 @@
 public class ControlFlowExercises {
     public static void main(String[] args) {
+
 /*  increment by two's  till 100*/
 //int i = 0;
 //do{
@@ -22,6 +23,4 @@ do{
 }while(i<=1000000);
 
     }
-
-
 }
