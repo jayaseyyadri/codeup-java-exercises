@@ -7,6 +7,7 @@ public class ConsoleExercises {
 //        System.out.format("The value of pi is approximately %.2f", pi);
 
         Scanner userInput=new Scanner(System.in);
+        userInput.useDelimiter("\n");
 //        System.out.println("enter an integer");
 //        // if not an integer throws an error
 //        int userNumber= userInput.nextInt();
@@ -31,15 +32,22 @@ public class ConsoleExercises {
 //        System.out.println(userSentence);
 //        String userSentence = userInput.nextLine();
 //        System.out.println(userSentence);
-
-        System.out.println("Enter the length of the rectangle");
-        int length=Integer.parseInt(userInput.nextLine());
-        System.out.println("Enter the width of thr rectangle ");
-        int width=Integer.parseInt(userInput.nextLine());
-        System.out.printf("The area of the rectangle is : %d \n" +
-                "The perimeter of the rectangle is %d " ,length*width,2*length+2*width);
-
-
+                            /*BONUS*/
+//        System.out.println("Enter the length of the rectangle");
+//        int length=Integer.parseInt(userInput.nextLine());
+//        System.out.println("Enter the width of the rectangle ");
+//        int width=Integer.parseInt(userInput.nextLine());
+//        System.out.printf("The area of the rectangle is : %d \n" +
+//                "The perimeter of the rectangle is %d \n" ,length*width,2*length+2*width);
+//       double newLength=length;
+//        System.out.println(newLength);
+//        newLength=Double.parseDouble(userInput.nextLine());
+//       double newWidth=width;
+//        System.out.println();
+//        System.out.println("enter height of cuboid ");
+//       double height=Double.parseDouble(userInput.nextLine());
+//
+//        System.out.printf("the volume of the cuboid is : %f :", newLength*newWidth*height);
 
 
 
