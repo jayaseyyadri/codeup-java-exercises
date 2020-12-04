@@ -26,5 +26,6 @@ public class Bob {
                 System.out.println(bobOtherwise);
             }
         } while (talk);
+
     }
 }
