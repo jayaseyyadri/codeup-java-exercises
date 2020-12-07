@@ -4,9 +4,9 @@ public class StringLecture {
 
 // ------ .equals(String anotherString)
 
-        String one = "2";
-        String two = "2";
-        System.out.println(one.equals(two));
+//        String one = "2";
+//        String two = "2";
+//        System.out.println(one.equals(two));
 
 //      DONT USE == TO CHECK VALUE OF STRING
 //        System.out.println(one==two);
