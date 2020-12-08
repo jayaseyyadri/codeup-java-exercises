@@ -7,5 +7,10 @@ public class DishTest {
 
         dish1.printSummary();
 
+DishTools.shoutDishName(dish1);
+DishTools.analyzeDishCost(dish1);
+DishTools.flipRecommendation(dish1);
+
+
     }
 }
