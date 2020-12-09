@@ -7,11 +7,14 @@ public class DishTest {
         dish1.setNameOfDish("French Fries");
         dish1.setCostInCents(50);
         dish1.setWouldRecommend(true);
+
+        DishTools.shoutDishName(dish1);
+        DishTools.analyzeDishCost(dish1);
+        DishTools.flipRecommendation(dish1);
+
+
         dish1.printSummary();
 
-DishTools.shoutDishName(dish1);
-DishTools.analyzeDishCost(dish1);
-DishTools.flipRecommendation(dish1);
 
 
     }

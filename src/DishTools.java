@@ -20,7 +20,7 @@ public class DishTools {
 
     }
     public static void flipRecommendation (Dish recommendation){
-
+        recommendation.setWouldRecommend(!recommendation.getWouldRecommend());
     }
 
 }
