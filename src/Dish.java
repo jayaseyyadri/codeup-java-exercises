@@ -26,7 +26,11 @@ public class Dish {
         return wouldRecommend;
     }
 
-
+public Dish(int costInCents,String nameOfDish, boolean wouldRecommend){
+        this.costInCents=costInCents;
+        this.nameOfDish=nameOfDish;
+        this.wouldRecommend=wouldRecommend;
+}
 
 //instance method
 public void printSummary(){
