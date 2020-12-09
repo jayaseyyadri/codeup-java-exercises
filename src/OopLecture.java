@@ -4,7 +4,7 @@ public class OopLecture {
 
             // ======================== slide 3 (classes and objects)
 //              create
-            Person rick = new Person();
+            Persons rick = new Persons();
 //if you sout out an object we get an address associated with it
 
 //            You can == p1 & p2 and you will get false as they've 2 different reference ids
