@@ -3,10 +3,15 @@ import java.util.Scanner;
 
 public class Input {
 
-    private Scanner scanner =new Scanner(System.in);
+    private Scanner scanner ;
     private boolean isY;
     private int min;
     private int max;
+
+public Input(){
+    //can use this too  & we put it in a constructo so tht it doesn't wait in the backgroun
+    scanner= new Scanner(System.in);
+}
 
 
 public String getString(){
@@ -15,6 +20,7 @@ return this.scanner.nextLine();
 }
 
 public boolean yesNo(){
+
     if (this.scanner.next().equalsIgnoreCase("y")||this.scanner.next().equalsIgnoreCase("yes"))
     {
         this.isY=true;
@@ -25,18 +31,24 @@ public boolean yesNo(){
 
     public int getInt(){
         System.out.println("enter an integer");
-        return scanner.nextInt();
+        return this.scanner.nextInt();
     }
 
 public int getInt(int min,int max){
         System.out.printf("Enter an integer between %d and %d ", min , max);
-           int userNumber=scanner.nextInt();
+           int userNumber=this.scanner.nextInt();
             if(userNumber > max || userNumber<min){
                 System.out.println("please enter within the range");
                 return getInt(min,max);
             }
 return userNumber;
 }
+
+ /*        do{
+    sout(pass a min & max
+    userNumber=scanner.nextInt()
+               } while(userNumber < min || userNumber < max );*/
+
 
     public double getDouble(){
         System.out.println("enter a double");
