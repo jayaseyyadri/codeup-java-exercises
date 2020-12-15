@@ -27,7 +27,7 @@ public class Animal {
     }
 
     public String getAnimalInfo(){
-     return getNumberOfLegs(),getPreferredClimate() ;
+     return getPreferredClimate();
  }
 }
 //Create a class of Animal
