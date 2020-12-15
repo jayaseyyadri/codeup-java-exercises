@@ -1,15 +1,18 @@
 package shapes;
 
-import org.w3c.dom.css.Rect;
-
 public class ShapesTest {
 
     public static void main(String [] args){
-        Rectangle box1=new Rectangle(4,5);
-        System.out.println(box1.getArea());
-        System.out.println(box1.getPerimeter());
-        Rectangle box2= new Square(5);
-        System.out.println(box2.getArea());
-        System.out.println(box2.getPerimeter());
+//Square myShape=new Square(5);
+//        System.out.println(myShape.getArea());
+//        Rectangle myShape2=new Rectangle(6,7);
+//        System.out.println(myShape2);
+
+        Measurable myShape =new Square(5);
+        System.out.println(myShape.getArea());
+        System.out.println(myShape.getPerimeter());
+        myShape= new Rectangle(20,30);
+        System.out.println(myShape.getArea());
+        System.out.println(myShape.getPerimeter());
     }
 }
