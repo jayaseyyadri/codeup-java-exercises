@@ -5,11 +5,11 @@ import java.util.Arrays;
 public class Student {
 
     private String name;
-    private ArrayList<Integer>grade;
+    private ArrayList<Double>grades;
 
-    public Student(String name, ArrayList<Integer> grade){
+    public Student(String name){
         this.name=name;
-        this.grade=grade;
+        this.grades= new ArrayList<>();
     }
     public String getName() {
         return name;
@@ -19,25 +19,25 @@ public class Student {
         this.name = name;
     }
 
-    public ArrayList<Integer> getGrade() {
-        return grade;
+    public void addGrade(double grade){
+        this.grades.add(grade);
     }
 
-    public void setGrade(ArrayList<Integer> grade) {
-        this.grade = grade;
+    public double getGradeAverage() {
+        double sum =0;
+        for(double grade:grades){
+            sum+=grade;
+        }
+        return sum/grades.size();
     }
 
-    public void addGrade(int grade){
-        this.grade.add(33);
-        System.out.println(grade);
-    }
 
-//    public double getGradeAverage(int grades) {
-//    }
-    public static void main(String[] srgs){
-        ArrayList a =new ArrayList();
-        Student s1 =new Student("j",a);
-        s1.getGrade().add(0,22);
-        System.out.println(s1.grade);
+    public static void main(String[] args){
+        Student s1 =new Student("j");
+        System.out.println(s1.getName());
+        s1.addGrade(90);
+        s1.addGrade(180);
+        System.out.println(s1.getGradeAverage());
+
     }
 }
