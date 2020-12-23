@@ -48,7 +48,7 @@ public class ConsoleExercises {
 //        System.out.printf("The area of the rectangle is : %d \n" +
 //                "The perimeter of the rectangle is %d \n" ,length*width,2*length+2*width);
 
-//        /*BONUS*/  the delimitor makes us nullify the need for
+//        /*BONUS*/  the delimiter makes us nullify the need for
 
 //        System.out.println("Enter the length of the classroom");
 //        double newLength=Double.parseDouble(userInput.nextLine());

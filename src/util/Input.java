@@ -30,13 +30,18 @@ public boolean yesNo(){
 
 
     public int getInt(){
-        System.out.println("enter an integer");
-        return this.scanner.nextInt();
-    }
+        try {
+            return Integer.valueOf(this.getString());
+        }catch(NumberFormatException e){
+            System.out.println("Please enter an Integer");
+
+       return getInt();
+        }
+}
 
 public int getInt(int min,int max){
         System.out.printf("Enter an integer between %d and %d ", min , max);
-           int userNumber=this.scanner.nextInt();
+           int userNumber=Integer.valueOf(getString());
             if(userNumber > max || userNumber<min){
                 System.out.println("please enter within the range");
                 return getInt(min,max);
@@ -51,8 +56,12 @@ return userNumber;
 
 
     public double getDouble(){
-        System.out.println("enter a double");
-        return scanner.nextDouble();
+       try{
+           return Double.valueOf(this.getString());
+       }catch (NumberFormatException e){
+           System.out.println("Please enter a value in double");
+           return getDouble();
+       }
 
     }
 
