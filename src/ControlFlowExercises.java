@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class ControlFlowExercises {
     public static void main(String[] args) {
 
-Scanner scanner= new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 //        for(int i=5 ;i<=15;i++ ){
 //        System.out.print(i+" " );
 //    }
@@ -33,28 +33,26 @@ Scanner scanner= new Scanner(System.in);
             System.out.println("Enter marks scored ");
             int marks = scanner.nextInt();
 
-            if ( marks >= 88 ||marks <= 100 ){
+            if (marks >= 88 && marks<=100 ) {
                 System.out.println("You secured A");
-            }else if(marks >=80 || marks <= 87){
-                System.out.println("You secured B" );
-            }else if(marks >=67 || marks<= 79 ){
-                System.out.println("You secured C" );
-            }else if(marks >= 60 || marks <=66) {
+            } else if (marks >= 80  && marks<=87 ) {
+                System.out.println("You secured B");
+            } else if (marks >=67 && marks<=79) {
+                System.out.println("You secured C");
+            } else if (marks >= 66 && marks < =60) {
                 System.out.println("You secured D");
-            }else if(marks >= 0 || marks >=59){
-                    System.out.println("You secured E" );
-            }else{
+            } else if (marks >0 && marks<=59) {
+                System.out.println("You secured F");
+            } else {
                 System.out.println("Enter a valid number ");
             }
-
-//            B : 87 - 80
-//            C : 79 - 67
-//            D : 66 - 60
-//            F : 59 - 0
-
-
-        }while(wantToContinue);
+            System.out.println("Do you want to continue?");
+            String userResponse = scanner.next().toLowerCase();
+            if (userResponse.trim().equals("n") || userResponse.trim().equals("no")) {
+                wantToContinue = false;
+            }
+        } while (wantToContinue);
 
 
-        }
+    }
 }
