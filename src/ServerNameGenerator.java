@@ -1,23 +1,24 @@
-//public class ServerNameGenerator {
-//
-//    private String[] adjectives = {"Pickled", "sweet", "Slippery", "Squeaking", "Ambidextrous", "Jazzy", "Loud", "Easy", "red", "chill"};
-//    private String[] nouns = {"paris", "coding", "cheese", "bread", "job", "puppy", "beach", "Cody", "book", "ball"};
-//
-//    public void nameGenerator(String[] adjectives, String[] nouns) {
-//        int random=(int)(Math.random()*adjectives.length;
-//
-//        this.adjectives=adjectives;
-//             this.nouns=nouns;
-//    }
-//
-//
-//
-//    public static void main(String[] args) {
-//ServerNameGenerator a=new ServerNameGenerator();
-//
-//
-//    }
-//
-//
-//
-//}
+import java.util.Random;
+
+public class ServerNameGenerator {
+
+   public static String[] adjectives = {"Pickled", "sweet", "Slippery", "Squeaking", "Ambidextrous", "Jazzy", "Loud", "Easy", "red", "chill"};
+   public static String[] nouns = {"paris", "coding", "cheese", "bread", "job", "puppy", "beach", "Cody", "book", "ball"};
+
+
+    public static String nameGenerator(String[] words) {
+        Random random =new Random();
+       int  randomIndex =random.nextInt(words.length);
+       return  words[randomIndex];
+    }
+
+
+
+    public static void main(String[] args) {
+        System.out.println("Server Name : ");
+        System.out.println(nameGenerator(adjectives) +" " +nameGenerator(nouns));
+    }
+
+
+
+}
