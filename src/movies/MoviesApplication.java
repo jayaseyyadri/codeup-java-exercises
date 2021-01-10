@@ -2,6 +2,8 @@ package movies;
 
 import java.util.Scanner;
 
+import util.Input;
+
 public class MoviesApplication {
 
     public static void main(String[] args) {
@@ -14,5 +16,5 @@ public class MoviesApplication {
         System.out.println(" 4 - view movies in the horror category");
         System.out.println(" 5 - view movies in the scifi category");
         System.out.println("   Enter your choice:)");
-         int userChoice=scanner.nextInt();
+         =scanner.nextInt();
     }}
