@@ -3,9 +3,9 @@ public class HelloWorld {
     public static void main(String[] args) {
 //        System.out.println("Hello world");
 //        System.out.print("Hello world, from the command line");
-  int myFavoriteNumber=6;
+        int myFavoriteNumber = 6;
         System.out.println(myFavoriteNumber);
-        String myString="jaya";
+        String myString = "jaya";
 //       myString ='j';->incompatible types
 //       myString = 3.14159;->incompatible types
         System.out.println(myString);
@@ -13,7 +13,7 @@ public class HelloWorld {
 //        float myNumber = 3.14;
 //        float myNumber = (float)3.14;
 //
-        double myNumber=3.14;
+        double myNumber = 3.14;
 //         myNumber=(float)3.14;
 
 

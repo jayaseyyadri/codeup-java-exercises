@@ -1,18 +1,19 @@
 import java.sql.SQLOutput;
 import java.util.Scanner;
+
 public class ConsoleExercises {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 //        double pi = 3.14159;
 //        System.out.format("The value of pi is approximately %.2f %n", pi);
 //                same as System.out.printf
 
-        Scanner userInput=new Scanner(System.in);
+        Scanner userInput = new Scanner(System.in);
 //        userInput.useDelimiter("\n");
 //
 //        System.out.println("enter an integer");
 //        int userNumber= userInput.nextInt();
-            // if not an integer throws an error
+        // if not an integer throws an error
 
 //        System.out.println("Enter three words");
 //        System.out.println("Enter first word");
@@ -28,9 +29,8 @@ public class ConsoleExercises {
 
 //        System.out.printf("Your three words are %n%s  %s%n %s%n ", wordOne,wordTwo,wordThree);
 
-            // more than 3 1st three followed by space
-            // less than 3 it doesnt finish till we input minimum 3
-
+        // more than 3 1st three followed by space
+        // less than 3 it doesnt finish till we input minimum 3
 
 
 //        System.out.println("Enter a sentence");
@@ -60,8 +60,6 @@ public class ConsoleExercises {
 //       double height=Double.parseDouble(userInput.nextLine());
 //
 //        System.out.printf("the volume of the cuboid is : %f :", newLength*newWidth*height);
-
-
 
 
     }
