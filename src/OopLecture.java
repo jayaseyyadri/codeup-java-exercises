@@ -87,27 +87,27 @@ Math.random();
 
             // ======================== slide 8 (constructors)
 
-//            Student jane = new Student("Jane Doe", "Zion");
+//            grades.Student jane = new grades.Student("Jane Doe", "Zion");
 //            System.out.print(jane.name + " - ");
 //            System.out.println(jane.cohort); // prints "Jane Doe - Zion"
-//            Student john = new Student("John Doe");
+//            grades.Student john = new grades.Student("John Doe");
 //            System.out.println(john.name + " - ");
 //            System.out.println(john.cohort); // prints "John Doe - Unassigned"
 
 
             // ======================== slide 9 (this keyword)
 
-//            Student jane = new Student("Jane Doe", "Zion");
+//            grades.Student jane = new grades.Student("Jane Doe", "Zion");
 //            System.out.print(jane.name + " - ");
 //            System.out.println(jane.cohort); // prints "Jane Doe - Zion"
-//            Student john = new Student("John Doe");
+//            grades.Student john = new grades.Student("John Doe");
 //            System.out.print(john.name + " - ");
 //            System.out.println(john.cohort); // prints "John Doe - Unassigned"
 
 
             // ======================== slide 10 (visibility)
 
-//            Student student = new Student("John Doe", 82.4);
+//            grades.Student student = new grades.Student("John Doe", 82.4);
 //            System.out.println(student.name) // "John Doe"
 //            // DON'T DO THIS - can't access private properties outside the class
 //            System.out.println(student.grade);

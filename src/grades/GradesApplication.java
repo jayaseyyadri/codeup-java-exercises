@@ -1,3 +1,5 @@
+package grades;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -5,7 +7,7 @@ public class GradesApplication  {
 
     public static void main(String[] args) {
 
-        HashMap <String,Student>students =new HashMap();
+        HashMap <String, Student>students =new HashMap();
         Student s3= new Student("alpha");
         s3.addGrade(80);
         s3.addGrade(89);
